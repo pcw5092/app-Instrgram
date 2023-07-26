@@ -8,13 +8,13 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.Instrgram</groupId>
-	<artifactId>app-Instrgram</artifactId>
+	<groupId>com.instrgram</groupId>
+	<artifactId>clone-instrgram-study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>app-Instrgram</name>
-	<description>Instrgram</description>
+	<name>instrgram</name>
+	<description>clone-instrgram-study</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -25,6 +25,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+		</dependency>	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -56,8 +60,7 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-				<!-- JSP 템플릿 엔진 -->
+		<!-- JSP 템플릿 엔진 -->
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-jasper</artifactId>
@@ -76,11 +79,6 @@
 			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 
-        <dependency>
-        	<groupId>org.edupoll</groupId>
-        	<artifactId>chap09_app_final</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
 	</dependencies>
 
 	<build>

@@ -31,7 +31,7 @@ public class SecurityConfig {
                     .anyRequest()
                     .permitAll())
                     .formLogin(login -> login
-                            .loginPage("/auth/join")
+                            .loginPage("/auth/login")
                             .loginProcessingUrl("/login") // 스프링 시큐리티가 로그인을 가로챈다.
                             .defaultSuccessUrl("/")); // 정상적으로 요청이 완료
         
